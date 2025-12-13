@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Development Course - কারিকুলাম</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>কারিকুলাম - Flutter Development Course</h1>
+            <div class="header-info">
+                <span>📅 ১৭ সপ্তাহ</span>
+                <span>🎓 ৬০+ লাইভ ক্লাস</span>
+                <span>👨‍🏫 Kamrul Hasan</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container main-layout">
+        <!-- Course Content (Left Column) -->
+        <div class="course-content">
+            <!-- Week 0 -->
+            <div class="week-card week-card-1">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 0</span>
+                        <h3>Introduction Class</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 1 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Introduction Class</h4>
+                        <p><strong>Topics:</strong> Comprehensive Computer Fundamentals, Networking Essentials, Mobile OS Architecture & Design Principles (Android/iOS – Material & Cupertino)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 1 -->
+            <div class="week-card week-card-2">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 1</span>
+                        <h3>Dart Basic</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Flutter Environment Setup</h4>
+                        <p><strong>Topics:</strong> Flutter SDK installation | IDE setup | Emulator/device setup | Creating & running first project | Dart main() structure</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Mastering Dart Variables & Data Types</h4>
+                        <p><strong>Topics:</strong> var/final/const | int, double, String, bool, dynamic | String interpolation | Multi-line strings</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 3: Deep Dive into Dart Operators</h4>
+                        <p><strong>Topics:</strong> Arithmetic/relational/logical | Null-aware operators (??, ?., !) | Cascade operator (..)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 2 -->
+            <div class="week-card week-card-3">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 2</span>
+                        <h3>Data Handling</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Mastering Dart Lists</h4>
+                        <p><strong>Topics:</strong> Growable vs fixed lists | add/remove/insert/sort | for, forEach, map | Nested lists</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Understanding Dart Sets</h4>
+                        <p><strong>Topics:</strong> Uniqueness | union | intersection | difference</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 3: Working with Dart Maps</h4>
+                        <p><strong>Topics:</strong> Key–value storage | nested maps | keys/values/entries/forEach | collection if/spread</p>
+                    </div>
+                    <div class="project-tag">🎯 Mini Project: Student Information System</div>
+                </div>
+            </div>
+
+            <!-- Week 3 -->
+            <div class="week-card week-card-4">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 3</span>
+                        <h3>Control Flow</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 2 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Conditional Logic in Dart</h4>
+                        <p><strong>Topics:</strong> If–else | Nested if–else | Switch–case | Pattern matching</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Looping and Iteration in Dart</h4>
+                        <p><strong>Topics:</strong> for | while | do–while | for-in | break/continue | Nested loops</p>
+                    </div>
+                    <div class="project-tag">🎯 Mini Project: Number Guessing Game</div>
+                </div>
+            </div>
+
+            <!-- Week 4 -->
+            <div class="week-card week-card-1">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 4</span>
+                        <h3>Function</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Dart Function Fundamentals</h4>
+                        <p><strong>Topics:</strong> Function creation | Calling functions | Return types | Arrow functions</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Mastering Dart Parameters</h4>
+                        <p><strong>Topics:</strong> Positional | Named | required | Default values | Optional params</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 3: Advanced Function Concepts</h4>
+                        <p><strong>Topics:</strong> Anonymous | Higher-order | Recursive | Local vs global</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 5 -->
+            <div class="week-card week-card-2">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 5</span>
+                        <h3>OOP (Object-Oriented Programming)</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 4 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Classes and Objects</h4>
+                        <p><strong>Topics:</strong> Defining classes and objects | Default and named constructors | Using this for property access</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Dart Inheritance</h4>
+                        <p><strong>Topics:</strong> extends keyword | super keyword | Method overriding</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 3: Advanced OOP Concepts</h4>
+                        <p><strong>Topics:</strong> Abstract classes and methods | Implementing interfaces | Polymorphism basics</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 4: Encapsulation in Dart</h4>
+                        <p><strong>Topics:</strong> Getters & setters | Private fields (_variable)</p>
+                    </div>
+                    <div class="project-tag">🎯 Mini Project: Shape Calculator App</div>
+                </div>
+            </div>
+
+            <!-- Week 6 -->
+            <div class="week-card week-card-3">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 6</span>
+                        <h3>Flutter Basic</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Flutter Architecture & AI Integration</h4>
+                        <p><strong>Topics:</strong> Flutter framework layers | Stateless vs Stateful widgets</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Fundamental Flutter Widgets</h4>
+                        <p><strong>Topics:</strong> Scaffold | AppBar | FloatingActionButton | Drawer | Text properties | Icon & Material Icons</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 3: App Structure in Flutter</h4>
+                        <p><strong>Topics:</strong> MaterialApp basics | CupertinoApp basics | Running apps on multiple devices</p>
+                    </div>
+                    <div class="project-tag">🎯 Mini Project: Hello Flutter App</div>
+                </div>
+            </div>
+
+            <!-- Week 7 -->
+            <div class="week-card week-card-4">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 7</span>
+                        <h3>Widget and Layouts</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Flutter Layouts & Core Widgets</h4>
+                        <p><strong>Topics:</strong> Material vs Cupertino widgets | Row & Column | Stack & Positioned | Flex & Expanded</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Flutter Container & Alignment</h4>
+                        <p><strong>Topics:</strong> Align & Center | Container (padding, margin, color, border) | BoxDecoration</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 3: Text Styling, Responsive Design & Theming</h4>
+                        <p><strong>Topics:</strong> Text fonts, size, weight, decoration | MediaQuery for responsiveness | Light/Dark mode theming</p>
+                    </div>
+                    <div class="project-tag">🎯 Mini Project: Profile Card UI</div>
+                </div>
+            </div>
+
+            <!-- Week 8 -->
+            <div class="week-card week-card-1">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 8</span>
+                        <h3>Advanced Widgets</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Advanced Text & Image Handling</h4>
+                        <p><strong>Topics:</strong> Text widget deep dive (overflow, maxLines) | Image widget (fit, placeholders, cached images)</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Buttons, Interactive Widgets, Lists & Grids</h4>
+                        <p><strong>Topics:</strong> IconButton | ElevatedButton, OutlinedButton | Chips & ChoiceChips | ListView | GridView</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 3: UI Components & Reusable Widgets</h4>
+                        <p><strong>Topics:</strong> Card customization | Reusable custom widgets | Divider & Spacer</p>
+                    </div>
+                    <div class="project-tag">🎯 Mini Project: Contact List App</div>
+                </div>
+            </div>
+
+            <!-- Week 9 -->
+            <div class="week-card week-card-2">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 9</span>
+                        <h3>Forms & Interactivity</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Flutter Form Elements</h4>
+                        <p><strong>Topics:</strong> TextFormField basics | Form widget & validation | FocusNode</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Touch & Gesture Handling</h4>
+                        <p><strong>Topics:</strong> GestureDetector | InkWell | Draggable | Dismissible (swipe to delete)</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 3: Flutter UI Components & Animations</h4>
+                        <p><strong>Topics:</strong> Stepper | AnimatedContainer | AnimatedOpacity & TweenAnimationBuilder</p>
+                    </div>
+                    <div class="project-tag">🎯 Mini Project: Login Form with Validation</div>
+                </div>
+            </div>
+
+            <!-- Week 10 -->
+            <div class="week-card week-card-3">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 10</span>
+                        <h3>Flutter Life Cycle</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Class 1: Flutter Widget Lifecycle</h4>
+                        <p><strong>Topics:</strong> Stateful widget lifecycle | initState | dispose | setState & performance</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 2: Flutter Navigation</h4>
+                        <p><strong>Topics:</strong> Navigator 1.0 (push, pop) | Navigator 2.0 (Router API) | Named routes & arguments</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Live Class 3: Navigation UI Components</h4>
+                        <p><strong>Topics:</strong> BottomNavigationBar | TabBar & TabView | CustomScrollView | SliverAppBar</p>
+                    </div>
+                    <div class="project-tag">🎯 Mini Project: News Reader App</div>
+                </div>
+            </div>
+
+            <!-- Week 11 -->
+            <div class="week-card week-card-4">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 11</span>
+                        <h3>State Management (GetX)</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 2 live class</span>
+                    <div class="class-detail">
+                        <h4>Class 1: GetX Basics & Controller Setup</h4>
+                        <p><strong>Topics:</strong> What is state? | setState limitations | GetX basics | GetxController setup | State management with GetBuilder</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Class 2: Advanced GetX Techniques</h4>
+                        <p><strong>Topics:</strong> Obx widget | Dependency injection (Get.put, Get.lazyPut) | State lifecycle best practices</p>
+                    </div>
+                    <div class="project-tag">🎯 Mini Project: To-Do List App with GetX</div>
+                </div>
+            </div>
+
+            <!-- Week 12-13 -->
+            <div class="week-card project-card week-card-1">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 12-13</span>
+                        <h3>📋 Task Manager Project</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 8 live class</span>
+                    <div class="class-detail">
+                        <h4>Complete Task Management App with API Integration</h4>
+                        <p><strong>Topics:</strong> Task Manager App UI & Authentication | Login and Signup Screens | Task List Screen & Add Task Form | API Integration (GET & POST) | Updating Tasks (PUT) | Deleting Tasks (DELETE) | State Management with GetX | Polished UI Design & Error Handling</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 14-15 -->
+            <div class="week-card project-card week-card-2">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 14-15</span>
+                        <h3>⚽ Football Match Score</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 6 live class</span>
+                    <div class="class-detail">
+                        <h4>Live Score App with Firebase Backend</h4>
+                        <p><strong>Topics:</strong> Firebase Setup in Flutter | Firestore Database Basics | CRUD Operations with Firestore | Push Notifications Setup | Firebase Authentication | Firebase Analytics & Crashlytics</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 16-17 -->
+            <div class="week-card project-card week-card-3">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 16-17</span>
+                        <h3>🛒 E-commerce Project</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 8+ live class</span>
+                    <div class="class-detail">
+                        <h4>Complete E-commerce App</h4>
+                        <p><strong>Topics:</strong> E-commerce UI Design (Home, Product & Cart Screens) | Product Details Screen | Shopping Cart Functionality | User Authentication | API Integration for Products & Cart | Checkout Process & Orders Screen | Responsive UI and UX Improvements | Optional: Payment Gateway Integration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar (Right Column) -->
+        <aside class="sidebar">
+            <!-- Submission Section -->
+            <div class="sidebar-card">
+                <h3>📤 Project Submission</h3>
+                <p>Submit your projects here</p>
+                <input type="text" id="formLink" placeholder="Google Form Link" class="form-input">
+                <button class="btn-submit" onclick="openSubmissionForm()">Submit Project</button>
+            </div>
+
+            <!-- Leaderboard Section -->
+            <div class="sidebar-card leaderboard">
+                <h3>🏆 Leaderboard</h3>
+                <p class="subtitle">Top Performers</p>
+                
+                <div class="leader-list">
+                    <div class="leader-item rank-1">
+                        <div class="rank">🥇 1</div>
+                        <div class="info">
+                            <div class="name">Student Name</div>
+                            <div class="stats">5/5 projects · 98%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-item rank-2">
+                        <div class="rank">🥈 2</div>
+                        <div class="info">
+                            <div class="name">Student Name</div>
+                            <div class="stats">5/5 projects · 95%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-item rank-3">
+                        <div class="rank">🥉 3</div>
+                        <div class="info">
+                            <div class="name">Student Name</div>
+                            <div class="stats">4/5 projects · 92%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-item">
+                        <div class="rank">4</div>
+                        <div class="info">
+                            <div class="name">Student Name</div>
+                            <div class="stats">4/5 projects · 88%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-item">
+                        <div class="rank">5</div>
+                        <div class="info">
+                            <div class="name">Student Name</div>
+                            <div class="stats">3/5 projects · 85%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-item">
+                        <div class="rank">6</div>
+                        <div class="info">
+                            <div class="name">Student Name</div>
+                            <div class="stats">3/5 projects · 82%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-item">
+                        <div class="rank">7</div>
+                        <div class="info">
+                            <div class="name">Student Name</div>
+                            <div class="stats">2/5 projects · 78%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="leader-item">
+                        <div class="rank">8</div>
+                        <div class="info">
+                            <div class="name">Student Name</div>
+                            <div class="stats">2/5 projects · 75%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="update-info">Updated regularly</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Flutter Development Course | Kamrul Hasan</p>
+    </footer>
+
+    <script>
+        function toggleWeek(header) {
+            const body = header.nextElementSibling;
+            const arrow = header.querySelector('.arrow');
+            const isActive = body.classList.contains('active');
+            
+            if (isActive) {
+                body.classList.remove('active');
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                body.classList.add('active');
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        function openSubmissionForm() {
+            const formLink = document.getElementById('formLink').value;
+            if (formLink && formLink.trim() !== '' && formLink.startsWith('http')) {
+                window.open(formLink, '_blank');
+            } else {
+                alert('Please enter a valid Google Form link or contact the instructor!');
+            }
+        }
+    </script>
+</body>
+</html>
