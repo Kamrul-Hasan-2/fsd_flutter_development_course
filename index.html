@@ -390,15 +390,26 @@
         <!-- Sidebar (Right Column) -->
         <aside class="sidebar">
             <!-- Submission Section -->
-            <div class="sidebar-card">
-                <h3>📤 Project Submission</h3>
-                <p>Submit your projects here</p>
-                <input type="text" id="formLink" placeholder="Google Form Link" class="form-input">
-                <button class="btn-submit" onclick="openSubmissionForm()">Submit Project</button>
+            <div class="sidebar-card locked-section">
+                <div class="lock-overlay">
+                    <div class="lock-icon">🔒</div>
+                    <p class="lock-message">Course Not Started</p>
+                </div>
+                <div class="locked-content">
+                    <h3>📤 Project Submission</h3>
+                    <p>Submit your projects here</p>
+                    <input type="text" id="formLink" placeholder="Google Form Link" class="form-input">
+                    <button class="btn-submit" onclick="openSubmissionForm()">Submit Project</button>
+                </div>
             </div>
 
             <!-- Leaderboard Section -->
-            <div class="sidebar-card leaderboard">
+            <div class="sidebar-card leaderboard locked-section">
+                <div class="lock-overlay">
+                    <div class="lock-icon">🔒</div>
+                    <p class="lock-message">Course Not Started</p>
+                </div>
+                <div class="locked-content">
                 <h3>🏆 Leaderboard</h3>
                 <p class="subtitle">Top Performers</p>
                 
@@ -469,6 +480,7 @@
                 </div>
                 
                 <p class="update-info">Updated regularly</p>
+                </div>
             </div>
         </aside>
     </div>
