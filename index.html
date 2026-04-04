@@ -12,13 +12,19 @@
         <div class="container">
             <h1>কারিকুলাম - Flutter Development Course</h1>
             <div class="header-info">
-                <span>📅 ১৭ সপ্তাহ</span>
-                <span>🎓 ৬০+ লাইভ ক্লাস</span>
-                <span>👨‍🏫 Kamrul Hasan</span>
+                <span>১৭ সপ্তাহ</span>
+                <span> ৬০+ লাইভ ক্লাস</span>
+                <span>Mentor - Kamrul Hasan</span>
+            </div>
+            <div class="class-tabs">
+                <button class="class-tab active" onclick="switchClassTab('original')">Original Class</button>
+                <button class="class-tab" onclick="switchClassTab('free')">Free Class</button>
             </div>
         </div>
     </header>
 
+    <!-- Original Class Content -->
+    <div id="originalClassView" class="class-view active">
     <!-- Main Content -->
     <div class="container main-layout">
         <!-- Course Content (Left Column) -->
@@ -484,6 +490,27 @@
             </div>
         </aside>
     </div>
+    </div>
+
+    <!-- Free Class Content -->
+    <div id="freeClassView" class="class-view">
+        <div class="container free-class-layout">
+            <div class="sidebar-card free-class-card">
+                <h3>🎓 Free Class</h3>
+                <p>Watch the free class video:</p>
+                <div class="video-wrapper">
+                    <iframe
+                        id="freeClassVideo"
+                        src="https://www.youtube.com/embed/-vAKZZCVe90?start=0&rel=0&vq=hd1080"
+                        title="Free Class Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <p>© 2025 Flutter Development Course | Kamrul Hasan</p>
@@ -510,6 +537,35 @@
                 window.open(formLink, '_blank');
             } else {
                 alert('Please enter a valid Google Form link or contact the instructor!');
+            }
+        }
+
+        function switchClassTab(tabName) {
+            const originalView = document.getElementById('originalClassView');
+            const freeView = document.getElementById('freeClassView');
+            const tabs = document.querySelectorAll('.class-tab');
+            const freeClassVideo = document.getElementById('freeClassVideo');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            if (tabName === 'free') {
+                originalView.classList.remove('active');
+                freeView.classList.add('active');
+                tabs[1].classList.add('active');
+
+                if (freeClassVideo) {
+                    const baseSrc = 'https://www.youtube.com/embed/-vAKZZCVe90?start=0&rel=0&vq=hd1080';
+                    freeClassVideo.src = baseSrc;
+                }
+            } else {
+                freeView.classList.remove('active');
+                originalView.classList.add('active');
+                tabs[0].classList.add('active');
+
+                if (freeClassVideo) {
+                    freeClassVideo.src = '';
+                    freeClassVideo.src = 'https://www.youtube.com/embed/-vAKZZCVe90?start=0&rel=0&vq=hd1080';
+                }
             }
         }
     </script>

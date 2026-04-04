@@ -12,6 +12,9 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -38,6 +41,51 @@ body {
     flex-wrap: wrap;
     color: #6c757d;
     font-size: 0.9rem;
+}
+
+.class-tabs {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.class-tab {
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    color: #334155;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.class-tab:hover {
+    border-color: #2563eb;
+    color: #1d4ed8;
+}
+
+.class-tab.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+}
+
+.class-view {
+    display: none;
+}
+
+.class-view.active {
+    display: block;
+    flex: 1;
+}
+
+.free-class-layout {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    max-width: 700px;
 }
 
 .container {
@@ -261,6 +309,32 @@ body {
     margin-bottom: 16px;
 }
 
+.free-class-card {
+    border-left: 4px solid #ef4444;
+    max-width: 560px;
+    margin: 0;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    margin: 0;
+    padding-top: 56.25%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .subtitle {
     margin-bottom: 20px !important;
 }
@@ -473,6 +547,16 @@ body {
         flex-wrap: wrap;
     }
 
+    .class-tabs {
+        margin-top: 12px;
+        gap: 8px;
+    }
+
+    .class-tab {
+        font-size: 0.8rem;
+        padding: 7px 12px;
+    }
+
     .main-layout {
         padding-top: 16px;
         gap: 20px;
@@ -573,6 +657,10 @@ body {
     .footer {
         padding: 16px;
         font-size: 0.85rem;
+    }
+
+    .free-class-layout {
+        padding-top: 16px;
     }
 }
 
