@@ -17,8 +17,9 @@
                 <span>Mentor - Kamrul Hasan</span>
             </div>
             <div class="class-tabs">
-                <button class="class-tab active" onclick="switchClassTab('original')">Original Class</button>
-                <button class="class-tab" onclick="switchClassTab('free')">Free Class</button>
+                <a class="class-tab class-tab-link" href="https://fsdfreelancehelp.com/">Home</a>
+                <button id="originalClassTab" class="class-tab active" onclick="switchClassTab('original')">Paid Class / Original Class</button>
+                <button id="freeClassTab" class="class-tab" onclick="switchClassTab('free')">Free Class</button>
             </div>
         </div>
     </header>
@@ -544,6 +545,8 @@
             const originalView = document.getElementById('originalClassView');
             const freeView = document.getElementById('freeClassView');
             const tabs = document.querySelectorAll('.class-tab');
+            const originalClassTab = document.getElementById('originalClassTab');
+            const freeClassTab = document.getElementById('freeClassTab');
             const freeClassVideo = document.getElementById('freeClassVideo');
 
             tabs.forEach(tab => tab.classList.remove('active'));
@@ -551,7 +554,9 @@
             if (tabName === 'free') {
                 originalView.classList.remove('active');
                 freeView.classList.add('active');
-                tabs[1].classList.add('active');
+                if (freeClassTab) {
+                    freeClassTab.classList.add('active');
+                }
 
                 if (freeClassVideo) {
                     const baseSrc = 'https://www.youtube.com/embed/-vAKZZCVe90?start=0&rel=0&vq=hd1080';
@@ -560,7 +565,9 @@
             } else {
                 freeView.classList.remove('active');
                 originalView.classList.add('active');
-                tabs[0].classList.add('active');
+                if (originalClassTab) {
+                    originalClassTab.classList.add('active');
+                }
 
                 if (freeClassVideo) {
                     freeClassVideo.src = '';
