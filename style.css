@@ -321,6 +321,37 @@ body {
     margin: 0;
 }
 
+.pre-recorded-card {
+    border-left: 4px solid #0ea5e9;
+    max-width: 1200px;
+    margin: 0;
+}
+
+.pre-recorded-grid {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.pre-recorded-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px;
+    background: #fff;
+}
+
+.pre-recorded-item h4 {
+    color: #0f172a;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pre-recorded-item .video-wrapper {
+    max-width: 100%;
+}
+
 .video-wrapper {
     position: relative;
     width: 100%;
