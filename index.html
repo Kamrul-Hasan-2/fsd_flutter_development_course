@@ -20,6 +20,7 @@
                 <a class="class-tab class-tab-link" href="https://fsdfreelancehelp.com/">Home</a>
                 <button id="originalClassTab" class="class-tab active" onclick="switchClassTab('original')">Paid Class / Original Class</button>
                 <button id="freeClassTab" class="class-tab" onclick="switchClassTab('free')">Free Class</button>
+                <button id="freeClassSyllabusTab" class="class-tab" onclick="switchClassTab('free-syllabus')">Free Class Syllabus</button>
                 <button id="preRecordedClassTab" class="class-tab" onclick="switchClassTab('pre-recorded')">Pre-recorded Class</button>
             </div>
         </div>
@@ -514,6 +515,148 @@
         </div>
     </div>
 
+    <!-- Free Class Syllabus -->
+    <div id="freeClassSyllabusView" class="class-view">
+    <div class="container main-layout">
+        <div class="course-content">
+            <!-- Week 1 -->
+            <div class="week-card week-card-1">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 1</span>
+                        <h3>Flutter Basics & Dart Fundamentals</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live classes</span>
+                    <div class="class-detail">
+                        <h4>Class 1: Introduction to Flutter & Setup</h4>
+                        <p><strong>Topics:</strong> What is Flutter? | Why Flutter? | Environment setup | Installing Flutter SDK | Setting up Android Studio & Emulator | Creating your first Flutter app | Project structure overview</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Class 2: Dart Basics for Flutter</h4>
+                        <p><strong>Topics:</strong> Dart fundamentals | Variables (var, final, const) | Data types (int, double, String, bool) | String interpolation | Operators (arithmetic, logical, comparison)</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Class 3: Flutter Widget Fundamentals</h4>
+                        <p><strong>Topics:</strong> What are widgets? | Stateless vs Stateful widgets | Basic widgets (Scaffold, AppBar, Text, Button) | Widget tree concept | Hot reload & hot restart</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 2 -->
+            <div class="week-card week-card-2">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 2</span>
+                        <h3>Layouts, Widgets & UI Design</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 3 live classes</span>
+                    <div class="class-detail">
+                        <h4>Class 1: Layout Widgets</h4>
+                        <p><strong>Topics:</strong> Row & Column widgets | Flex & Expanded | Container & Alignment | Padding & Margin | Build responsive layouts</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Class 2: Interactive Widgets & Forms</h4>
+                        <p><strong>Topics:</strong> TextField for input | Button widgets (ElevatedButton, FloatingActionButton) | GestureDetector for touch events | Form validation basics | User input handling</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Class 3: Lists, Navigation & State Management Basics</h4>
+                        <p><strong>Topics:</strong> ListView for displaying lists | setState() for state changes | Navigator for screen transitions | Passing data between screens | Basic app navigation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 3 -->
+            <div class="week-card week-card-3 project-card">
+                <div class="week-header" onclick="toggleWeek(this)">
+                    <div class="week-info">
+                        <span class="week-number">Week 3</span>
+                        <h3>💰 Expense Tracker App Project</h3>
+                    </div>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="week-body">
+                    <span class="live-count">🎥 4 live classes (Project-Based)</span>
+                    <div class="class-detail">
+                        <h4>Class 1: Project Overview & UI Design</h4>
+                        <p><strong>Topics:</strong> Project structure | Designing the app UI (home screen, add expense screen) | Using Scaffold, AppBar, and FloatingActionButton | Creating reusable widgets</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Class 2: Expense Model & Data Management</h4>
+                        <p><strong>Topics:</strong> Creating Expense class (id, title, amount, date, category) | Managing list of expenses | Adding new expenses | Storing data in memory (List)</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Class 3: Display & Delete Functionality</h4>
+                        <p><strong>Topics:</strong> ListView to display expenses | Calculating total expenses | Delete expense functionality | Formatting currency & dates | UI refinement</p>
+                    </div>
+                    <div class="class-detail">
+                        <h4>Class 4: Final Polish & Features</h4>
+                        <p><strong>Topics:</strong> Category filtering | Expense search | Statistics display | Color-coded categories | App theme customization | Deployment preparation</p>
+                    </div>
+                    <div class="project-tag">🎯 Final Project: Fully Functional Expense Tracker App</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar (Right Column) -->
+        <aside class="sidebar">
+            <!-- Key Features -->
+            <div class="sidebar-card">
+                <h3>📌 What You'll Learn</h3>
+                <ul class="feature-list">
+                    <li>✅ Flutter fundamentals & setup</li>
+                    <li>✅ Dart programming basics</li>
+                    <li>✅ Widget architecture</li>
+                    <li>✅ State management with setState</li>
+                    <li>✅ Building real app UIs</li>
+                    <li>✅ User input & forms</li>
+                    <li>✅ Navigation & routing</li>
+                    <li>✅ Building a complete project</li>
+                </ul>
+            </div>
+
+            <!-- Project Requirements -->
+            <div class="sidebar-card">
+                <h3>🎯 Expense Tracker Features</h3>
+                <ul class="feature-list">
+                    <li>✅ Add new expenses</li>
+                    <li>✅ View all expenses in a list</li>
+                    <li>✅ Display total expenses</li>
+                    <li>✅ Delete expenses</li>
+                    <li>✅ Categorize expenses</li>
+                    <li>✅ Search functionality</li>
+                    <li>✅ Formatted dates & currency</li>
+                    <li>✅ Beautiful UI/UX</li>
+                </ul>
+            </div>
+
+            <!-- Requirements -->
+            <div class="sidebar-card">
+                <h3>📋 Prerequisites</h3>
+                <p>No prior Flutter or Dart experience required!</p>
+                <ul class="feature-list">
+                    <li>✅ Basic programming knowledge</li>
+                    <li>✅ Computer with 4GB+ RAM</li>
+                    <li>✅ Internet connection</li>
+                    <li>✅ Willingness to learn</li>
+                </ul>
+            </div>
+
+            <!-- Get Started -->
+            <div class="sidebar-card">
+                <h3>🚀 Get Started</h3>
+                <p>This is a completely <strong>FREE</strong> 3-week course designed to give you a solid foundation in Flutter development!</p>
+                <p style="margin-top: 10px; font-size: 14px; color: #666;">Join the class and build your first real app!</p>
+            </div>
+        </aside>
+    </div>
+    </div>
+
     <!-- Pre-recorded Class Content -->
     <div id="preRecordedClassView" class="class-view">
         <div class="container free-class-layout">
@@ -640,9 +783,26 @@
 
     <script>
         function toggleWeek(header) {
+            const card = header.closest('.week-card');
             const body = header.nextElementSibling;
             const arrow = header.querySelector('.arrow');
             const isActive = body.classList.contains('active');
+
+            if (card && card.closest('#freeClassSyllabusView')) {
+                const syllabusCards = card.closest('.course-content').querySelectorAll('.week-card');
+                syllabusCards.forEach(otherCard => {
+                    const otherBody = otherCard.querySelector('.week-body');
+                    const otherArrow = otherCard.querySelector('.arrow');
+
+                    if (otherBody && otherBody !== body) {
+                        otherBody.classList.remove('active');
+                    }
+
+                    if (otherArrow && otherArrow !== arrow) {
+                        otherArrow.style.transform = 'rotate(0deg)';
+                    }
+                });
+            }
             
             if (isActive) {
                 body.classList.remove('active');
@@ -665,10 +825,12 @@
         function switchClassTab(tabName) {
             const originalView = document.getElementById('originalClassView');
             const freeView = document.getElementById('freeClassView');
+            const freeClassSyllabusView = document.getElementById('freeClassSyllabusView');
             const preRecordedView = document.getElementById('preRecordedClassView');
             const tabs = document.querySelectorAll('.class-tab');
             const originalClassTab = document.getElementById('originalClassTab');
             const freeClassTab = document.getElementById('freeClassTab');
+            const freeClassSyllabusTab = document.getElementById('freeClassSyllabusTab');
             const preRecordedClassTab = document.getElementById('preRecordedClassTab');
             const freeClassVideo = document.getElementById('freeClassVideo');
 
@@ -676,6 +838,7 @@
 
             originalView.classList.remove('active');
             freeView.classList.remove('active');
+            freeClassSyllabusView.classList.remove('active');
             preRecordedView.classList.remove('active');
 
             if (freeClassVideo) {
@@ -691,6 +854,15 @@
                 if (freeClassVideo) {
                     const baseSrc = 'https://www.youtube.com/embed/-vAKZZCVe90?start=0&rel=0&vq=hd1080';
                     freeClassVideo.src = baseSrc;
+                }
+            } else if (tabName === 'free-syllabus') {
+                freeClassSyllabusView.querySelectorAll('.week-body.active').forEach(body => body.classList.remove('active'));
+                freeClassSyllabusView.querySelectorAll('.arrow').forEach(arrow => {
+                    arrow.style.transform = 'rotate(0deg)';
+                });
+                freeClassSyllabusView.classList.add('active');
+                if (freeClassSyllabusTab) {
+                    freeClassSyllabusTab.classList.add('active');
                 }
             } else if (tabName === 'pre-recorded') {
                 preRecordedView.classList.add('active');

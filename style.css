@@ -109,11 +109,21 @@ body {
     padding-bottom: 40px;
 }
 
+#freeClassSyllabusView .main-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
 /* Course Content */
 .course-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+}
+
+#freeClassSyllabusView .course-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
 }
 
 .week-card {
@@ -230,7 +240,7 @@ body {
 
 .week-body.active {
     max-height: 2000px;
-    padding: 16px;
+    padding: 14px 16px;
 }
 
 .live-count {
@@ -293,6 +303,15 @@ body {
     position: sticky;
     top: 110px;
     height: fit-content;
+}
+
+#freeClassSyllabusView .sidebar {
+    position: static;
+    top: auto;
+}
+
+#freeClassSyllabusView .sidebar-card {
+    max-width: 100%;
 }
 
 .sidebar-card {
@@ -562,6 +581,10 @@ body {
     
     .course-content {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #freeClassSyllabusView .course-content {
+        grid-template-columns: 1fr;
     }
 }
 
